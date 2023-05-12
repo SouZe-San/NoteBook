@@ -4,7 +4,7 @@ an Online Note book for write down your personal notes in any where
 
 ## Backend
 
-[Click here for Get Backend API]([https://www.google.com](https://github.com/SouZe-San/BackEnd-for-NoteBook-site))
+[Click here for Get Backend API](https://github.com/SouZe-San/BackEnd-for-NoteBook-site)
 
 
 @ Our Main entry point is index.js
