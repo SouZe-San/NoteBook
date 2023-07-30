@@ -7,7 +7,7 @@ const Navbar = () => {
     <div className="flex flex-col gap-14 h-full">
       <div className="logo_section">ThisIsLogo</div>
       <nav className="main_nav">
-        <div className="nav_items before:bg-[#ff048a]">
+        <div className="nav_items active before:bg-[#ff048a]">
           <div className="nav_button">Notes</div>
         </div>
         <div className="nav_items before:bg-[#60ff04]">

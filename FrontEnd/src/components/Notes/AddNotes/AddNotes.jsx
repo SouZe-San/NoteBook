@@ -1,7 +1,8 @@
 import React from "react";
 import "./addNotes.scss";
 const AddNotes = ({ setWantToAdd }) => {
-  const handelSubmit = () => {
+  const handelSubmit = (e) => {
+    e.preventDefault();
     console.log("Pika BUUU");
   };
 
@@ -13,7 +14,12 @@ const AddNotes = ({ setWantToAdd }) => {
 
   return (
     <div className="addNote_modal absolute flex flex-col justify-center items-center">
-      <form onSubmit={handelSubmit} method="post" className="flex flex-col items-start gap-4">
+      <h1 className="head-line"> Add New Note</h1>
+      <form
+        onSubmit={handelSubmit}
+        method="post"
+        className="flex flex-col items-start gap-4 md:w-[55%] md:h-[60%]"
+      >
         <div className="input">
           <label htmlFor="title">
             <h1 className="label">Title</h1>

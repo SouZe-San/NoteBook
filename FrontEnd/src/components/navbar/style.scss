@@ -9,17 +9,22 @@ nav {
     padding: 0 1rem;
 
     .nav_items {
+        &::before {
+            content: "  ";
+            width: 2rem;
+            height: 4rem;
+            position: absolute;
+            // left: 1.5rem;
+            margin-top: 5px;
+            z-index: 0;
+            opacity: 0;
+            transition: opacity 0.18s ease-in;
+        }
 
         &:hover {
 
             &::before {
-                content: "  ";
-                width: 7rem;
-                height: 3rem;
-                position: absolute;
-                left: 1.5rem;
-                margin-top: 1rem;
-                z-index: 0;
+                opacity: 1;
             }
         }
 
@@ -27,10 +32,10 @@ nav {
         width: 100%;
         height: 5rem;
         border-radius: 5px;
-        border: 1px solid rgba(145, 144, 143, 0.65);
+        // border: 1px solid rgba(145, 144, 143, 0.65);
 
         .nav_button {
-            width: 100%;
+            // width: 100%;
             display: flex;
             height: 100%;
             align-items: center;
@@ -40,6 +45,14 @@ nav {
             background: #ffffff24;
             position: relative;
             z-index: 3;
+            margin-left: 3px;
+            border: 1px solid rgba(145, 144, 143, 0.65);
+        }
+    }
+
+    .active {
+        &::before {
+            opacity: 1;
         }
     }
 }

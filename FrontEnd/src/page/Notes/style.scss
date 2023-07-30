@@ -1,5 +1,6 @@
 .navBlock {
     background: white;
+    border-right: 1px solid #3d3d3d64;
 }
 
 
@@ -17,17 +18,17 @@
 
 .user_section {
     section {
-        padding: 0 4rem 0 1rem;
+        // padding: 0 4rem 0 1rem;
 
         .greeting {
             h1 {
-                font-size: 3rem;
+                // font-size: 3rem;
             }
         }
 
         button {
             border: 1px solid #00000059;
-            padding: 5px 1rem;
+            // padding: 5px 1rem;
             border-radius: 5px;
         }
     }
