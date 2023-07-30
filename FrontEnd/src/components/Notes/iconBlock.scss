@@ -1,0 +1,49 @@
+svg {
+    width: 1.5rem;
+}
+
+.menu_btn {
+    button.menu-btn {
+        padding: 3px;
+        border: 1px solid black;
+        border-radius: 5px;
+
+        svg {
+            width: 1.1rem;
+            margin: 0.3rem;
+        }
+    }
+}
+
+.icon_box {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    place-items: center;
+
+    .theme_btn {
+        padding: 0.5rem 1rem;
+
+        button {
+            display: flex;
+            align-items: center;
+            border: 1px solid white;
+            padding: 5px 1px;
+            border-radius: 3rem;
+
+            svg {
+                margin: 0 0.8rem;
+            }
+        }
+
+    }
+
+    .notification_btn {
+        padding: 0.5rem 1rem;
+    }
+
+    .user_avatar {
+        padding: 0.5rem 1rem;
+    }
+
+
+}

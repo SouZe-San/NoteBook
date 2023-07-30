@@ -1,0 +1,34 @@
+.navBlock {
+    background: white;
+}
+
+
+// Mobile - Nav
+@media screen and (max-width: 760px) {
+
+    .navBlock {
+        position: absolute;
+        transform: translateX(-100%);
+        z-index: 4;
+    }
+}
+
+
+
+.user_section {
+    section {
+        padding: 0 4rem 0 1rem;
+
+        .greeting {
+            h1 {
+                font-size: 3rem;
+            }
+        }
+
+        button {
+            border: 1px solid #00000059;
+            padding: 5px 1rem;
+            border-radius: 5px;
+        }
+    }
+}

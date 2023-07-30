@@ -2,10 +2,21 @@
 
 an Online Note book for write down your personal notes in any where
 
-# Backend ---- -------- ---
+# **Backend** ---- -------- ---
 
-@ Our Main entry point is index.js
-@ Our Main Database Connection Code in dataConnect.js
+- Express use for create a server. Clone this repo then,
+
+```
+cd:Backend
+
+npm i
+
+nodemon index.js
+
+```
+
+- Our Main entry point is index.js
+  -Our Main Database Connection Code in dataConnect.js
 
 ### Folder Structure
 
@@ -28,7 +39,7 @@ an Online Note book for write down your personal notes in any where
 
 We use JWT token for Authentication .. which content header+data+signature
 
-# Frontend ---- -------- ---
+# **Frontend** ---- -------- ---
 
 Have an Simple design for
 

@@ -1,0 +1,1 @@
+{"version":"0.0.0","name":"notebook_frontend","dependencies":{"concurrently":{"version":"8.0.1"},"react-dom":{"version":"18.2.0"},"react-router-dom":{"version":"6.11.1"},"react":{"version":"18.2.0"},"sass":{"version":"1.61.0"}}}
