@@ -4,19 +4,18 @@
     top: 50%;
     left: 50%;
     translate: -50% -50%;
-    z-index: 5;
+    z-index: 10;
     backdrop-filter: blur(4px);
 
 
     .head-line {
         font-size: 3rem;
-        position: absolute;
-        top: 4rem;
         -webkit-text-stroke: 2px;
-        -webkit-text-stroke-color: rgba(163, 0, 255, 0.92);
-        color: transparent;
+        -webkit-text-stroke-color: rgba(111, 27, 123, 0.92);
+        color: #fbfafa;
         font-weight: 700;
-        text-shadow: 2px -2px 0px #c700ffb8;
+        text-shadow: 2px -2px 0px rgba(255, 0, 227, 0.72);
+        margin-bottom: 2rem;
     }
 
     form {
@@ -29,7 +28,7 @@
 
         background: rgb(243, 243, 243);
         box-shadow: 0 9px 14px -2px rgba(5, 5, 5, 0.2), 0 3px 7px -3px black;
-        padding: 4rem;
+        padding: 3rem;
 
         .input {
             width: 80%;
@@ -40,20 +39,27 @@
                 margin-left: 10px;
             }
 
-            input {
+            input,
+            textarea {
                 width: 100%;
                 height: 2.5em;
                 border: 1px solid #0000002b;
                 border-radius: 5px;
                 padding-left: 10px;
-                font-size: 1.2rem;
+                font-size: 1rem;
                 outline: none;
                 background: #fcfbfb75;
+                color: #000000a6;
                 margin-top: 2px;
 
                 &::placeholder {
                     font-size: 1rem;
                 }
+            }
+
+            textarea {
+                height: 4.5rem;
+                resize: none;
             }
         }
 
@@ -76,6 +82,8 @@
 @media (max-width: 900px) {
     .addNote_modal {
         .head-line {
+            position: absolute;
+            top: 4rem;
             font-size: 2.7rem;
         }
 

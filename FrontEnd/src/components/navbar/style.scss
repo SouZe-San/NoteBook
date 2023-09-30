@@ -9,13 +9,15 @@ nav {
     padding: 0 1rem;
 
     .nav_items {
+        cursor: pointer;
+
         &::before {
             content: "  ";
             width: 2rem;
-            height: 4rem;
+            height: 3.4rem;
             position: absolute;
-            // left: 1.5rem;
-            margin-top: 5px;
+            margin-top: 11px;
+            border-radius: 10px;
             z-index: 0;
             opacity: 0;
             transition: opacity 0.18s ease-in;
@@ -41,12 +43,18 @@ nav {
             align-items: center;
             padding-left: 2rem;
             backdrop-filter: blur(20px) saturate(2);
-            border-radius: 5px;
-            background: #ffffff24;
+            border-radius: 15px;
+            // background: #ffffff24;
+            background: #602B924F;
             position: relative;
             z-index: 3;
             margin-left: 3px;
             border: 1px solid rgba(145, 144, 143, 0.65);
+            font-size: 16px;
+
+            svg {
+                margin-right: 10px;
+            }
         }
     }
 

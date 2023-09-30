@@ -1,20 +1,26 @@
 import React, { useState } from "react";
 import "./iconBlock.scss";
-const IconBlock = () => {
+const IconBlock = ({ slideTheNav }) => {
   const [isDark, setIsDark] = useState(false);
   return (
-    <div className="flex justify-between py-2 px-4 items-center">
+    <div className="flex justify-between  px-4 items-center relative">
       <div className="menu_btn">
-        <button className="menu-btn">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <button className="menu-btn icon_btn" onClick={slideTheNav}>
+          {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
             <path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z" fill="rgba(0,0,0,1)"></path>
+          </svg> */}
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              d="M21 17.9995V19.9995H3V17.9995H21ZM17.4038 3.90332L22 8.49951L17.4038 13.0957L15.9896 11.6815L19.1716 8.49951L15.9896 5.31753L17.4038 3.90332ZM12 10.9995V12.9995H3V10.9995H12ZM12 3.99951V5.99951H3V3.99951H12Z"
+              fill="rgba(247,247,247,1)"
+            ></path>
           </svg>
         </button>
       </div>
 
       <div className="icon_box">
-        <div className="theme_btn">
-          <button>
+        <div className="theme_btn ">
+          <button className="icon_btn">
             {/* Sun  */}
 
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -25,7 +31,7 @@ const IconBlock = () => {
             </svg>
 
             {/* Moon */}
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <svg className="active" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
               <path
                 d="M9.8216 2.23796C9.29417 3.38265 9 4.65697 9 6C9 10.9706 13.0294 15 18 15C19.343 15 20.6174 14.7058 21.762 14.1784C20.7678 18.6537 16.7747 22 12 22C6.47715 22 2 17.5228 2 12C2 7.22532 5.3463 3.23221 9.8216 2.23796ZM18.1642 2.29104L19 2.5V3.5L18.1642 3.70896C17.4476 3.8881 16.8881 4.4476 16.709 5.16417L16.5 6H15.5L15.291 5.16417C15.1119 4.4476 14.5524 3.8881 13.8358 3.70896L13 3.5V2.5L13.8358 2.29104C14.5524 2.1119 15.1119 1.5524 15.291 0.835829L15.5 0H16.5L16.709 0.835829C16.8881 1.5524 17.4476 2.1119 18.1642 2.29104ZM23.1642 7.29104L24 7.5V8.5L23.1642 8.70896C22.4476 8.8881 21.8881 9.4476 21.709 10.1642L21.5 11H20.5L20.291 10.1642C20.1119 9.4476 19.5524 8.8881 18.8358 8.70896L18 8.5V7.5L18.8358 7.29104C19.5524 7.1119 20.1119 6.5524 20.291 5.83583L20.5 5H21.5L21.709 5.83583C21.8881 6.5524 22.4476 7.1119 23.1642 7.29104Z"
                 fill="rgba(3,241,229,1)"
@@ -33,12 +39,20 @@ const IconBlock = () => {
             </svg>
           </button>
         </div>
-        <div className="notification_btn">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+
+        <div className="notification_btn icon_btn">
+          {/* Bell */}
+
+          {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
             <path d="M20 18.6667L20.4 19.2C20.5657 19.4209 20.5209 19.7343 20.3 19.9C20.2135 19.9649 20.1082 20 20 20H4C3.72386 20 3.5 19.7761 3.5 19.5C3.5 19.3918 3.53509 19.2865 3.6 19.2L4 18.6667V10C4 5.58172 7.58172 2 12 2C16.4183 2 20 5.58172 20 10V18.6667ZM9.5 21H14.5C14.5 22.3807 13.3807 23.5 12 23.5C10.6193 23.5 9.5 22.3807 9.5 21Z"></path>
+  </svg> */}
+
+          {/* MICROPHone */}
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M21 10.063V4C21 3.44772 20.5523 3 20 3H19C17.0214 4.97864 13.3027 6.08728 11 6.61281V17.3872C13.3027 17.9127 17.0214 19.0214 19 21H20C20.5523 21 21 20.5523 21 20V13.937C21.8626 13.715 22.5 12.9319 22.5 12 22.5 11.0681 21.8626 10.285 21 10.063ZM5 7C3.89543 7 3 7.89543 3 9V15C3 16.1046 3.89543 17 5 17H6L7 22H9V7H5Z"></path>
           </svg>
         </div>
-        <div className="user_avatar">User-Avatar</div>
+        <div className="user_avatar icon_btn">User-Avatar</div>
       </div>
     </div>
   );

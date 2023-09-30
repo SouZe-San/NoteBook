@@ -9,4 +9,18 @@
 body {
   width: 100vw;
   height: 100vh;
+  background: rgb(62, 5, 117);
+  background: linear-gradient(
+    135deg,
+    rgba(62, 5, 117, 1) 21%,
+    rgba(99, 23, 172, 1) 48%,
+    rgba(83, 5, 158, 1) 53%,
+    rgba(62, 5, 117, 1) 80%
+  );
+  overflow: hidden;
+  /* backdrop-filter: saturate(1.5); */
+}
+
+svg {
+  width: 1rem;
 }

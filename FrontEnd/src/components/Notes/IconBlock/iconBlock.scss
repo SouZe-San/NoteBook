@@ -1,15 +1,22 @@
 svg {
-    width: 1.5rem;
+    width: 1.2rem;
 }
 
 .menu_btn {
+    margin-left: 1.5rem;
+
     button.menu-btn {
         padding: 3px;
-        border: 1px solid black;
         border-radius: 5px;
+        backdrop-filter: blur(45rem) saturate(1.12) brightness(1.2);
+
+        &:hover {
+            // box-shadow: inset 0px -1px 1px rgba(0, 0, 0, 0.8117647059), 0 -1px 1px 0.4px #26003c, 0 0 5px 1px rgba(55, 0, 67, 0.58);
+            background: #747cff75;
+        }
 
         svg {
-            width: 1.1rem;
+            width: 1.35rem;
             margin: 0.3rem;
         }
     }
@@ -19,6 +26,7 @@ svg {
     display: grid;
     grid-template-columns: 2fr 1fr 2fr;
     place-items: center;
+    gap: 1rem;
 
     .theme_btn {
         padding: 0.5rem 1rem;
@@ -26,19 +34,50 @@ svg {
         button {
             display: flex;
             align-items: center;
-            border: 1px solid white;
-            padding: 5px 1px;
-            border-radius: 3rem;
+            justify-content: space-around;
+            width: 6.6rem;
+
+            // border: 1px solid white;
+            // padding: 5px 1px;
+            // border-radius: 3rem;
+
+            padding: 5px 0px;
+            border-radius: 2rem;
+            // backdrop-filter: blur(2rem);
+            // background: #b8fffc3b;
+            // box-shadow: inset 0px -1px 2px #000000cf;
+            // backdrop-filter: blur(45rem);
+            // background: rgba(182, 255, 252, 0.23);
+            // transition: box-shadow 0.2s ease-in;
+
+            // &:hover {
+            //     box-shadow: inset 0px -1px 1px rgba(0, 0, 0, 0.8117647059), 0 -1px 1px 0.4px #a300ff, 0 0 5px 1px #a706c894;
+            // }
+            .active {
+                box-shadow: inset 1px 1px 2px 0px #0000004f, inset -1px -1px 2px 0px #5500d0;
+            }
 
             svg {
-                margin: 0 0.8rem;
+                padding: 3px 5px;
+                width: 2rem;
+                border-radius: 10px;
+
+                &:hover {
+                    box-shadow: inset 1px 1px 2px 0px #0000004f, inset -1px -1px 2px 0px #5500d0;
+                }
             }
         }
 
     }
 
     .notification_btn {
-        padding: 0.5rem 1rem;
+        padding: 9px 15px;
+        border-radius: 10px;
+        cursor: pointer;
+
+        svg {
+            width: 1.1rem;
+        }
     }
 
     .user_avatar {
@@ -46,4 +85,33 @@ svg {
     }
 
 
+
+
+}
+
+
+.icon_btn {
+    // backdrop-filter: blur(45rem);
+    // background: rgba(182, 255, 252, 0.23);
+    backdrop-filter: blur(45rem) saturate(1.12);
+    background: rgba(254, 254, 254, 0.05);
+    transition: backdrop-filter 0.2s ease-in;
+    background: rgba(254, 254, 254, 0.05);
+    box-shadow: inset 0px -1px 1px rgba(0, 0, 0, 0.8117647059),
+        0 -1px 1px 0.4px #a300ffba,
+        0 0 5px 1px rgba(70, 15, 125, 0.58);
+
+    &:hover {
+        background: #ffffff70;
+        backdrop-filter: contrast(3);
+    }
+}
+
+@media screen and (max-width: 760px) {
+
+    .menu_btn {
+        button.menu-btn {
+            display: block;
+        }
+    }
 }
