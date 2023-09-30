@@ -8,8 +8,10 @@ import Note from "../../components/Notes/Note/Note";
 
 // Style
 import "./style.scss";
+import EditNotes from "../../components/Notes/EditNotes/EditNotes";
 const NotesBlock = () => {
   const [wantToAdd, setWantToAdd] = useState(false);
+  const [editClick, editClicked] = useState(false);
   const navRef = useRef(null);
   const [slideOut, setSlideOut] = useState(true);
 
@@ -17,12 +19,10 @@ const NotesBlock = () => {
     if (window.innerWidth <= 760) {
       if (slideOut) {
         // Nav Come out
-        console.log("Slide Come Out");
         navRef.current.style.transform = "translateX(0)";
         setSlideOut(false);
       } else {
         // nav goes in
-        console.log("slide Goes in");
         navRef.current.style.transform = "translateX(-100%)";
         setSlideOut(true);
       }
@@ -40,7 +40,7 @@ const NotesBlock = () => {
   return (
     <div className="flex h-full main_bg">
       <div className="flex-none w-1/5 min-w-[250px] h-full navBlock" ref={navRef}>
-        <Navbar />
+        <Navbar slideTheNav={slideTheNav} />
       </div>
       <div className="grow flex flex-col note-block">
         <div className="icons_section">
@@ -70,10 +70,11 @@ const NotesBlock = () => {
             </section>
 
             {wantToAdd && <AddNotes setWantToAdd={setWantToAdd} />}
+            {editClick && <EditNotes editClicked={editClicked} />}
           </div>
           <div className="notesSection pt-12 px-8 ">
             <div className="note-box grid lg:grid-cols-3 grid-cols-2 gap-8 pb-4">
-              <Note note={note} />
+              <Note note={note} editClicked={editClicked} />
             </div>
           </div>
         </div>

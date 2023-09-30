@@ -36,20 +36,24 @@
                 border-radius: 5px;
                 padding: 6px 6px;
                 cursor: pointer;
-                border: 0.5px solid #02020257;
-                box-shadow: 1px 1px 1px 0px black, -1px -1px 1px 0px rgba(181, 83, 255, 0.82);
+                border: 0.5px solid rgba(2, 2, 2, 0.3411764706);
+                box-shadow: 1px 1px 1px 0px #4c4a4a, -1px -1px 1px 0px rgba(118, 78, 148, 0.82);
 
                 &:hover {
                     background: rgba(255, 255, 255, 0.83);
                     // background: #9e63b914;
                     backdrop-filter: opacity(0.8) saturate(1.2);
+
+                    svg path {
+                        fill: rgb(0, 0, 0);
+                    }
                 }
 
                 svg {
                     width: 1.2rem;
 
                     path {
-                        fill: black;
+                        fill: rgb(154, 151, 151);
                     }
                 }
             }

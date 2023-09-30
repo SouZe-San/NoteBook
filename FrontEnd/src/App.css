@@ -6,21 +6,35 @@
 /* html {
   font-size: 62.5%;
 } */
+
+:root {
+  --whole-page-background-color: #151515;
+  /* --whole-page-background-color: #000000; */
+  --regular-text-color: #fff;
+  --nav-item-bg-color: #43364f4f;
+  --icon-btn-bg-color: inset 0px -1px 1px rgba(0, 0, 0, 0.8117647059),
+    0 -1px 1px 0.4px rgba(104, 58, 131, 0.67), 0 0 5px 1px rgba(55, 30, 79, 0.58);
+}
+
 body {
   width: 100vw;
   height: 100vh;
-  background: rgb(62, 5, 117);
-  background: linear-gradient(
+  background: var(--whole-page-background-color);
+  color: var(--regular-text-color);
+  overflow: hidden;
+
+  /* background: linear-gradient(
     135deg,
     rgba(62, 5, 117, 1) 21%,
     rgba(99, 23, 172, 1) 48%,
     rgba(83, 5, 158, 1) 53%,
     rgba(62, 5, 117, 1) 80%
-  );
-  overflow: hidden;
-  /* backdrop-filter: saturate(1.5); */
+  ); */
 }
 
 svg {
   width: 1rem;
+
+  color: #030014;
+  color: #1e1a32;
 }

@@ -5,6 +5,18 @@
     margin-bottom: 1.5rem;
 }
 
+.navClose_btn {
+    display: none;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    cursor: pointer;
+
+    svg {
+        width: 30px;
+    }
+}
+
 nav {
     padding: 0 1rem;
 
@@ -45,7 +57,7 @@ nav {
             backdrop-filter: blur(20px) saturate(2);
             border-radius: 15px;
             // background: #ffffff24;
-            background: #602B924F;
+            background: var(--nav-item-bg-color);
             position: relative;
             z-index: 3;
             margin-left: 3px;
@@ -69,4 +81,10 @@ nav {
     padding: 3rem 1rem;
     display: flex;
     align-items: flex-end;
+}
+
+@media (max-width: 760px) {
+    .navClose_btn {
+        display: block;
+    }
 }

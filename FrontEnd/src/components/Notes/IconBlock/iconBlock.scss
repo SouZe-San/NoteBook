@@ -11,13 +11,16 @@ svg {
         backdrop-filter: blur(45rem) saturate(1.12) brightness(1.2);
 
         &:hover {
-            // box-shadow: inset 0px -1px 1px rgba(0, 0, 0, 0.8117647059), 0 -1px 1px 0.4px #26003c, 0 0 5px 1px rgba(55, 0, 67, 0.58);
-            background: #747cff75;
+            background: #5b358175;
         }
 
         svg {
             width: 1.35rem;
             margin: 0.3rem;
+
+            path {
+                fill: #e8e4e4
+            }
         }
     }
 }
@@ -36,34 +39,44 @@ svg {
             align-items: center;
             justify-content: space-around;
             width: 6.6rem;
-
-            // border: 1px solid white;
-            // padding: 5px 1px;
-            // border-radius: 3rem;
-
             padding: 5px 0px;
             border-radius: 2rem;
-            // backdrop-filter: blur(2rem);
-            // background: #b8fffc3b;
-            // box-shadow: inset 0px -1px 2px #000000cf;
-            // backdrop-filter: blur(45rem);
-            // background: rgba(182, 255, 252, 0.23);
-            // transition: box-shadow 0.2s ease-in;
 
-            // &:hover {
-            //     box-shadow: inset 0px -1px 1px rgba(0, 0, 0, 0.8117647059), 0 -1px 1px 0.4px #a300ff, 0 0 5px 1px #a706c894;
-            // }
+
             .active {
-                box-shadow: inset 1px 1px 2px 0px #0000004f, inset -1px -1px 2px 0px #5500d0;
+                path {
+                    fill: #03f1e5;
+                }
+
+                box-shadow: inset 1px 1px 2px 0px #0000004f,
+                inset -1px -1px 2px 0px #316ed8;
             }
 
             svg {
                 padding: 3px 5px;
                 width: 2rem;
                 border-radius: 10px;
+            }
 
+            .moonIcon {
                 &:hover {
-                    box-shadow: inset 1px 1px 2px 0px #0000004f, inset -1px -1px 2px 0px #5500d0;
+                    path {
+                        fill: #03f1e5;
+                    }
+
+                    box-shadow: inset 1px 1px 2px 0px #0000004f,
+                    inset -1px -1px 2px 0px #1f96d6;
+                }
+            }
+
+            .sunIcon {
+                &:hover {
+                    path {
+                        fill: #f4ee06;
+                    }
+
+                    box-shadow: inset 1px 1px 2px 0px #0000004f,
+                    inset -1px -1px 2px 0px #eaa21c;
                 }
             }
         }
@@ -77,6 +90,16 @@ svg {
 
         svg {
             width: 1.1rem;
+
+            path {
+                fill: #8a8686
+            }
+
+            &:hover {
+                path {
+                    fill: #ffffff
+                }
+            }
         }
     }
 
@@ -91,18 +114,19 @@ svg {
 
 
 .icon_btn {
-    // backdrop-filter: blur(45rem);
-    // background: rgba(182, 255, 252, 0.23);
     backdrop-filter: blur(45rem) saturate(1.12);
-    background: rgba(254, 254, 254, 0.05);
     transition: backdrop-filter 0.2s ease-in;
     background: rgba(254, 254, 254, 0.05);
-    box-shadow: inset 0px -1px 1px rgba(0, 0, 0, 0.8117647059),
-        0 -1px 1px 0.4px #a300ffba,
-        0 0 5px 1px rgba(70, 15, 125, 0.58);
+    box-shadow: var(--icon-btn-bg-color);
+
+    svg {
+        path {
+            fill: rgb(138, 134, 134)
+        }
+    }
 
     &:hover {
-        background: #ffffff70;
+        background: rgba(154, 153, 156, 0.25);
         backdrop-filter: contrast(3);
     }
 }
