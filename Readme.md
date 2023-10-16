@@ -85,3 +85,12 @@ in routes folder keep all routes separately.....
 
 @Authentication
 We use jwt we token for Authentication .. which content header+data+signature\
+
+
+# _*One Glance On UI*_
+
+
+![Screenshot (59)](https://github.com/SouZe-San/NoteBook/assets/103335953/1b08557d-52f5-4ab6-8a43-662973f5b3ec)
+
+
+
