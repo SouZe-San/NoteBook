@@ -27,7 +27,7 @@ svg {
 
 .icon_box {
     display: grid;
-    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-columns: 2fr 1fr 1fr;
     place-items: center;
     gap: 1rem;
 
@@ -84,8 +84,8 @@ svg {
     }
 
     .notification_btn {
-        padding: 9px 15px;
-        border-radius: 10px;
+        padding: 10px 15px;
+        border-radius: 5px;
         cursor: pointer;
 
         svg {
@@ -94,17 +94,30 @@ svg {
             path {
                 fill: #8a8686
             }
+        }
 
-            &:hover {
-                path {
-                    fill: #ffffff
-                }
+        &:hover {
+            path {
+                fill: #ffffff
             }
         }
     }
 
     .user_avatar {
-        padding: 0.5rem 1rem;
+        padding: 10px 15px;
+        border-radius: 5px;
+
+        svg {
+            path {
+                fill: #8a8686
+            }
+        }
+
+        &:hover {
+            path {
+                fill: #ffffff
+            }
+        }
     }
 
 

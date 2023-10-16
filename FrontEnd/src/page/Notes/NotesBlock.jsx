@@ -75,6 +75,16 @@ const NotesBlock = () => {
           <div className="notesSection pt-12 px-8 ">
             <div className="note-box grid lg:grid-cols-3 grid-cols-2 gap-8 pb-4">
               <Note note={note} editClicked={editClicked} />
+              <Note note={note} editClicked={editClicked} />
+              <Note note={note} editClicked={editClicked} />
+              <Note note={note} editClicked={editClicked} />
+              <Note note={note} editClicked={editClicked} />
+              <Note note={note} editClicked={editClicked} />
+              <Note note={note} editClicked={editClicked} />
+              <Note note={note} editClicked={editClicked} />
+              <Note note={note} editClicked={editClicked} />
+              <Note note={note} editClicked={editClicked} />
+              <Note note={note} editClicked={editClicked} />
             </div>
           </div>
         </div>

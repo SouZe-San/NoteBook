@@ -1,8 +1,9 @@
 .logo_section {
 
     padding: 2rem 1rem;
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 1.5rem;
+    font-family: 'NeverWinter';
 }
 
 .navClose_btn {
@@ -86,5 +87,11 @@ nav {
 @media (max-width: 760px) {
     .navClose_btn {
         display: block;
+    }
+}
+
+@media (min-width: 1080px) {
+    nav {
+        margin-top: 5rem;
     }
 }

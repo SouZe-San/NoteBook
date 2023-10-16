@@ -76,7 +76,7 @@
 
                 .greeting {
                     h1 {
-                        font-size: 4.3rem;
+                        font-size: 3.3rem;
                         -webkit-text-fill-color: transparent;
                         background: linear-gradient(to right bottom, rgb(255, 255, 255) 30%, rgba(211, 211, 211, 0.67)) padding-box text;
                         color: unset;
@@ -86,18 +86,6 @@
                 button {
                     // border: 1px solid #00000059;
                     border-radius: 5px;
-
-
-                    // FIRST style
-                    // background: #c4b8ff;
-                    // backdrop-filter: blur(3rem) saturate(1.4);
-                    // box-shadow: 0 2px 16px -4px #000000d6, 0 1px 2px 0px black;
-
-
-                    // SECOND style
-                    // box-shadow: 0 1px 0px 0px rgba(0, 0, 0, 0.54), inset 0 0 29px 0px rgba(170, 0, 255, 0.32);
-                    // background: linear-gradient(92.88deg, rgb(116, 61, 196) 9.16%, rgb(137, 57, 255) 43.89%, rgb(103, 11, 196) 64.72%);
-
 
                     // 3RD style
                     background: linear-gradient(92.88deg, rgba(116, 61, 196, 0.07) 9.16%, rgba(137, 57, 255, 0.51) 43.89%, rgba(103, 11, 196, 0) 64.72%);
@@ -113,12 +101,12 @@
                     transition: box-shadow 0.15s ease-in;
                     box-shadow: 0 1px 0px 0px rgba(0, 0, 0, 0.54), inset 0 0 29px 0px rgba(170, 0, 255, 0.32),
                         -1px -1px 1px 0 #7d09dd;
+                    transition: all 0.3s ease-in-out;
 
                     &:hover {
-                        color: black;
-                        background: rgba(255, 255, 255, 0.78);
-
+                        background: rgba(48, 48, 48, 0.342);
                         backdrop-filter: saturate(1.2);
+                        color: white;
                     }
                 }
             }

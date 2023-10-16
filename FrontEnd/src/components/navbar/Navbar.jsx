@@ -18,7 +18,7 @@ const Navbar = ({ slideTheNav }) => {
         {/* <h1>Taccunio</h1>
         <h1>Noto</h1> */}
       </div>
-      <nav className="main_nav">
+      <nav className="main_nav lg:mt-2">
         {/* <div className="nav_items before:bg-[#eeff04]"> */}
         <div className="nav_items before:bg-[#e22ae8]">
           {" "}
